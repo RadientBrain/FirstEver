@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Hello, again I am {{name}} who came from a wormhole from other dimension</h1>
+
+<form action="add" method="POST">
+
+    {% csrf_token %}
+
+    Enter Number1 : <input type="text" name="num1"><br>
+    Enter Number2 : <input type="text" name="num2"><br>
+    <input type="submit">
+</form>
+
+{% endblock %}
